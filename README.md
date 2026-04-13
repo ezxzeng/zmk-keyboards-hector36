@@ -1,6 +1,6 @@
 # hector36 ZMK Module
 
-This repository contains the shield files for the [hector36](https://github.com/ezxzeng/hector36) to allow users to build firmware. This can be done by adding the module to the west.yml found in your zmk-config's config directory. There is a full guide available for this here: [ZMK Modules Doc](https://zmk.dev/docs/features/modules)
+This repository contains the shield files for the [hector36](https://github.com/ezxzeng/hector36) to allow users to build firmware. This can be done by adding the module to the west.yml found in your zmk-config's config directory. There is a full guide available for this here: [ZMK Modules Doc](https://zmk.dev/docs/features/modules). Note: this is after the zephyr 4.1 update.
 
 ## Usage
 
