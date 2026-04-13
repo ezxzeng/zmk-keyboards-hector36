@@ -1,12 +1,12 @@
 #include <physical_layouts.dtsi>
 
 / {
-    physical_layout0: physical_layout_0 {
+    hector36_physical_layout: hector36_physical_layout {
         compatible = "zmk,physical-layout";
         display-name = "hector36";
 
         kscan = <&kscan0>;
-        transform = <&matrix_transform0>;
+        transform = <&default_transform>;
 
         keys  //                     w   h    x    y     rot    rx    ry
             = <&key_physical_attrs 106 100    0  152 (-1000)     0     0>

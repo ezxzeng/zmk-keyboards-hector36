@@ -89,7 +89,7 @@
             display-name = "default_layer";
             bindings = <
 //    ┌──────────────┬────────────┬────────────┬─────────────┬────────────┐   ┌─────────────────┬────────────┬────────────┬────────────┬──────────────┐
-//    │ &rst rsftT Q │     W      │     E      │      R      │     T      │   │        Y        │     U      │     I      │     O      │ &rst rsftT P │
+//    │      Q       │     W      │     E      │      R      │     T      │   │        Y        │     U      │     I      │     O      │      P       │
 //    ├──────────────┼────────────┼────────────┼─────────────┼────────────┤   ├─────────────────┼────────────┼────────────┼────────────┼──────────────┤
 //    │  &hm lgui A  │ &hm lalt S │ &hm lctl D │ &hs lsft F  │     G      │   │        H        │ &hs rsft J │ &hm rctl K │ &hm ralt L │  &hm rgui ;  │
 //    ├──────────────┼────────────┼────────────┼─────────────┼────────────┤   ├─────────────────┼────────────┼────────────┼────────────┼──────────────┤
@@ -97,7 +97,7 @@
 //    └──────────────┴────────────┼────────────┼─────────────┼────────────┤   ├─────────────────┼────────────┼────────────┼────────────┴──────────────┘
 //                                │    lctl    │ mt lgui esc │ lt NAV ent │   │ &bsp_l SYM bspc │    spc     │    rsft    │
 //                                └────────────┴─────────────┴────────────┘   └─────────────────┴────────────┴────────────┘
-  &rst RST Q   &kp W        &kp E         &kp R          &kp T               &kp Y             &kp U          &kp I         &kp O        &rst RST P
+  &kp Q        &kp W        &kp E         &kp R          &kp T               &kp Y             &kp U          &kp I         &kp O        &kp P
   &hm LGUI A   &hm LALT S   &hm LCTRL D   &hs LSHIFT F   &kp G               &kp H             &hs RSHIFT J   &hm RCTRL K   &hm RALT L   &hm RGUI SEMI
   &kp Z        &kp X        &kp C         &kp V          &kp B               &kp N             &kp M          &kp COMMA     &kp DOT      &kp FSLH
                             &kp LCTRL     &mt LGUI ESC   &lt NAV ENTER       &bsp_l SYM BSPC   &kp SPACE      &kp RSHIFT

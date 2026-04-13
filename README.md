@@ -41,3 +41,12 @@ Default keymap is shown below and generated with [keyboard-layout-editor](https:
 ![default keymap](default_keymap.png)
 
 [homerow mods](https://precondition.github.io/home-row-mods) are are shown in gray, and the purple layer is unlocked by holding down both layer keys. A mouse layer is included but not visualized in the image as it'll get too cluttered.
+
+To build locally:
+```
+west build -p -d build/left -b nice_nano -S studio-rpc-usb-uart  -- -DSHIELD=hector36_left -DZMK_EXTRA_MODULES="/workspaces/zmk-modules/zmk-keyboards-hector36" -DCONFIG_ZMK_STUDIO=y
+
+west build -p -d build/right -b nice_nano -- -DSHIELD=hector36_right -DZMK_EXTRA_MODULES="/workspaces/zmk-modules/zmk-keyboards-hector36"
+
+west build -p -d build/reset -b nice_nano -- -DSHIELD=settings_reset
+```
