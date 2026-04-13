@@ -1,7 +1,7 @@
 #include <physical_layouts.dtsi>
 
 / {
-    hector36_physical_layout: hector36_physical_layout {
+    physical_layout0: physical_layout_0 {
         compatible = "zmk,physical-layout";
         display-name = "hector36";
 
@@ -40,10 +40,10 @@
             , <&key_physical_attrs 106 100 1109  260     400     0     0>
             , <&key_physical_attrs 106 100 1208  349    1000     0     0>
             , <&key_physical_attrs 106 100  316  371       0     0     0>
-            , <&key_physical_attrs 106 100  433  388    1500     0     0>
-            , <&key_physical_attrs 106 100  542  433    3000     0     0>
-            , <&key_physical_attrs 106 100  700  433 (-3000)     0     0>
-            , <&key_physical_attrs 106 100  809  388 (-1500)     0     0>
+            , <&key_physical_attrs 106 100  433  388    1500   483   428>
+            , <&key_physical_attrs 106 100  542  433    3000   592   483>
+            , <&key_physical_attrs 106 100  700  433 (-3000)   750   483>
+            , <&key_physical_attrs 106 100  809  388 (-1500)   859   428>
             , <&key_physical_attrs 106 100  926  371       0     0     0>
             ;
     };

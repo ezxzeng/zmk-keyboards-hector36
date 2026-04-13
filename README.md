@@ -36,3 +36,8 @@ include:
   - board: nice_nano
     shield: hector36_right
 ```
+
+Default keymap is shown below and generated with [keyboard-layout-editor](https://www.keyboard-layout-editor.com/#/gists/3e3b5046810b43f7d344c5cd1094e051):
+![default keymap](default_keymap.png)
+
+[homerow mods](https://precondition.github.io/home-row-mods) are are shown in gray, and the purple layer is unlocked by holding down both layer keys. A mouse layer is included but not visualized in the image as it'll get too cluttered.
