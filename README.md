@@ -29,11 +29,11 @@ Once you have the module added to your west.yml you can then build firmware as i
 note: to enable zmk studio, your build.yaml should look like this:
 ```yaml
 include:
-  - board: nice_nano
+  - board: nice_nano//zmk
     shield: hector36_left
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
-  - board: nice_nano
+  - board: nice_nano//zmk
     shield: hector36_right
 ```
 
@@ -43,10 +43,10 @@ Default keymap is shown below and generated with [keyboard-layout-editor](https:
 [homerow mods](https://precondition.github.io/home-row-mods) are are shown in gray, and the purple layer is unlocked by holding down both layer keys. A mouse layer is included but not visualized in the image as it'll get too cluttered.
 
 To build locally:
-```
-west build -p -d build/left -b nice_nano -S studio-rpc-usb-uart  -- -DSHIELD=hector36_left -DZMK_EXTRA_MODULES="/workspaces/zmk-modules/zmk-keyboards-hector36" -DCONFIG_ZMK_STUDIO=y
+```bash
+west build -p -d build/left -b nice_nano//zmk -S studio-rpc-usb-uart  -- -DSHIELD=hector36_left -DZMK_CONFIG="/workspaces/zmk-config/config" -DZMK_EXTRA_MODULES="/workspaces/zmk-modules/zmk-keyboards-hector36" -DCONFIG_ZMK_STUDIO=y
 
-west build -p -d build/right -b nice_nano -- -DSHIELD=hector36_right -DZMK_EXTRA_MODULES="/workspaces/zmk-modules/zmk-keyboards-hector36"
+west build -p -d build/right -b nice_nano//zmk -- -DSHIELD=hector36_right -DZMK_EXTRA_MODULES="/workspaces/zmk-modules/zmk-keyboards-hector36"
 
-west build -p -d build/reset -b nice_nano -- -DSHIELD=settings_reset
+west build -p -d build/reset -b nice_nano//zmk -- -DSHIELD=settings_reset
 ```
