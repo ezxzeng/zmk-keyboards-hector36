@@ -1,6 +1,11 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include "hector36-layouts.dtsi"
 
+&hector36_physical_layout {
+    kscan = <&mock_kscan>; // Label of the kscan node this layout uses
+    transform = <&default_transform>; // Label of the matrix transform this layout uses
+};
+
 / {
     
     chosen {

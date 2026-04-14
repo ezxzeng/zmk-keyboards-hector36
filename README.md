@@ -41,3 +41,15 @@ west build -p -d build/right -b nice_nano//zmk -- -DSHIELD=hector36_right -DZMK_
 
 west build -p -d build/reset -b nice_nano//zmk -- -DSHIELD=settings_reset
 ```
+
+build locally with dongle:
+
+```bash
+west build -p -d build/dongle -b nice_nano//zmk -S studio-rpc-usb-uart -- -DSHIELD=hector36_dongle -DZMK_CONFIG="/workspaces/zmk-config/config" -DZMK_EXTRA_MODULES="/workspaces/zmk-modules/zmk-keyboards-hector36" -DCONFIG_ZMK_STUDIO=y
+
+west build -p -d build/left -b nice_nano//zmk  -- -DSHIELD=hector36_left -DZMK_CONFIG="/workspaces/zmk-config/config" -DZMK_EXTRA_MODULES="/workspaces/zmk-modules/zmk-keyboards-hector36" -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+
+west build -p -d build/right -b nice_nano//zmk -- -DSHIELD=hector36_right -DZMK_EXTRA_MODULES="/workspaces/zmk-modules/zmk-keyboards-hector36"
+
+west build -p -d build/reset -b nice_nano//zmk -- -DSHIELD=settings_reset
+```
