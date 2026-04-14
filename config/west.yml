@@ -1,0 +1,22 @@
+manifest:
+  remotes:
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
+    - name: ezxzeng
+      url-base: https://github.com/ezxzeng
+
+  projects:
+    - name: zmk
+      remote: zmkfirmware
+      revision: main
+      import: app/west.yml
+
+    #
+    # Additional zmk modules
+    #
+    - name: zmk-keyboards-hector36
+      remote: ezxzeng
+      revision: main
+
+  self:
+    path: config
