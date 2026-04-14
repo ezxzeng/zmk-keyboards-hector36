@@ -1,6 +1,9 @@
 # Copyright (c) 2022 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
+config SHIELD_HECTOR36_DONGLE
+    def_bool $(shields_list_contains,hector36_dongle)
+
 config SHIELD_HECTOR36_LEFT
     def_bool $(shields_list_contains,hector36_left)
 

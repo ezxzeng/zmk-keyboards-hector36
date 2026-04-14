@@ -26,16 +26,7 @@ manifest:
 ```
 Once you have the module added to your west.yml you can then build firmware as if it was in your config's shield directory or in ZMK main.
 
-note: to enable zmk studio, your build.yaml should look like this:
-```yaml
-include:
-  - board: nice_nano//zmk
-    shield: hector36_left
-    snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
-  - board: nice_nano//zmk
-    shield: hector36_right
-```
+see `build.yaml` on how that would look
 
 Default keymap is shown below and generated with [keyboard-layout-editor](https://www.keyboard-layout-editor.com/#/gists/3e3b5046810b43f7d344c5cd1094e051):
 ![default keymap](default_keymap.png)
